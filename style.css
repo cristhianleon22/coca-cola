@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;/*elementos no crescan cuando se le da pading*/
+}
+
+body{
+    font-family: "Roboto"; /*tipografia*/
+    
+}
+
+a{
+    display: inline-block;/*respete el alto*/
+}
+
+p{
+    color: black;
+}
+
+
+header
+{
+    
+    padding: 15px 0;
+    position: fixed;/*ELEMENTO FIJO*/
+    top: 0;
+    left: 0;
+    z-index: 2;/*CAPAS*/
+    background-color: white;
+    width: 100%;
+    
+
+}
+
+header .container
+{
+    display: flex; /*aprovecha el espacio para acomodar los elementos hijos o elementos internos */
+    justify-content:space-between ; /* alinear los elementos en el eje x */
+    align-items: center; /* alinear los elementos en el eje y */
+}
+
+header .container nav a
+{
+    color: red;
+    text-decoration: none ;/*underline decorar linea de los vinculos - none quitar linea*/
+    margin: 0 15px;
+}
+
+header .container .logo
+{
+    width: 100px;
+}   
+
+/*clase*/
+.boton
+{
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.boton.boton-rojo
+{
+    color: white;
+    background-color: red;   
+    font-size: 20px;
+    font-weight: bold ; /*PROFUNDIDAD*/
+
+}
+
+.boton.boton-blanco
+{
+    color: red;
+    background-color: white;   
+    font-size: 16px;
+    font-weight: bold ; /*PROFUNDIDAD*/
+    border: 1px solid red;
+    
+
+}
+
+.seccion
+{
+    padding: 60px;
+    padding-bottom: 60px;
+}
+.cuadrado-perfecto
+{
+
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+
+}
+.cuadrado-perfecto img
+{
+
+   width: 100%;
+   height: 100;
+   object-fit: cover;
+   object-position: center;
+   position: absolute;
+   top: 0;
+   left: 0;
+    
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto; /*arriba y abajo 0px- izq der automatico */
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container-fluid
+{
+    width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;/*si la columna por su ancho no entra en la pantalla se va hacia abajo*/
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.columna
+{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.columna-33
+{
+    width:33.33%;
+}
+
+
+#inicio
+{
+    position: relative;/*posiciones son 3 : relativa se queda en el lugar pero se modifica con ( top,bottom,left,right,z-index)  absoluto=es como flotando el espacio mismas propiedades    */ 
+}
+
+#inicio img{
+    width: 100%;
+    display: block;
+}
+
+#inicio .bloque-inicio{
+
+    position: absolute; /* tiene que tener un elemento padre tipo relativo */
+    top: 40%;
+    left: 50%;
+    width: 450px;
+    text-align: center;/*alinear los textos*/
+    margin-left:-200px ;
+}
+
+#inicio .bloque-inicio h1
+{
+color: white;
+font-size: 35px;
+
+}
+
+#inicio .bloque-inicio p
+{
+    color: white;
+    font-size: 16px;
+}
+
+#nosotros
+{
+    background-image: url(img/latas.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+#nosotros p
+{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+#servicios .bloque-servicio
+{
+    border: 1px solid gray;
+}
+
+#servicios .bloque-servicio .bloque-img-servicio
+{
+
+}
+
+#servicios .bloque-servicio .bloque-img-servicio img
+{
+    width: 100%;
+    
+}
+
+#servicios .bloque-servicio .bloque-img-servicio.cuadrado-perfecto
+{
+    padding-bottom: 56.25%;
+}
+
+#servicios .bloque-servicio .bloque-contenido-servcio
+{
+    padding: 15PX;
+}
+#servicios .bloque-servicio .bloque-contenido-servcio H3
+{
+    margin-top: 0px;
+    font-size: 25px  ;
+}
+    
+
