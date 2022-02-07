@@ -50,6 +50,7 @@ header .container .logo
 }   
 
 /*clase*/
+
 .boton
 {
     text-align: center;
@@ -94,7 +95,7 @@ header .container .logo
 {
 
    width: 100%;
-   height: 100;
+   height: 100%;
    object-fit: cover;
    object-position: center;
    position: absolute;
@@ -105,14 +106,14 @@ header .container .logo
 
 .container{
     width: 1140px;
-    margin: 0 auto; /*arriba y abajo 0px- izq der automatico */
+    margin: 0 auto ; /*arriba y abajo 0px- izq der automatico */
     padding-right: 15px;
     padding-left: 15px;
 }
 
 .container-fluid
 {
-    width: 1140px;
+    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -215,6 +216,37 @@ font-size: 35px;
 {
     margin-top: 0px;
     font-size: 25px  ;
+}
+
+#galeria h4
+{
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+
+
+}
+
+#galeria img
+{
+    filter: grayscale(1);
+
+}
+
+#galeria .cuadrado-perfecto:hover img
+{
+    filter: grayscale(0);
+
+}
+
+#galeria .cuadrado-perfecto:hover h4
+{
+    display: none;
 }
     
 
